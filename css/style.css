@@ -1,0 +1,125 @@
+/* INDEX
+-----------------------------------------------*/
+
+/*
+
+- Layout
+- Typography
+- Links
+- Buttons
+- Main Navigation
+- Media Queries
+	- Medium and Large Screens (min-width: 48em / 768px)
+
+*/
+
+
+
+/* Layout 
+------------------------------------------------*/
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin-bottom: 3.75em;
+}
+
+.container {
+	max-width: 780px;
+	margin: 0 auto;
+	width: 90%;
+}
+
+/* Typography 
+------------------------------------------------*/
+
+html, button, input, select, textarea,
+.pure-g [class *= "pure-u"] {
+    font-family: adelle, serif;
+}
+
+body {
+	color: #666;
+	font-size: 14px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: #2a2c31;
+	font-family: "brandon-grotesque", sans-serif;
+}
+
+/* Links
+------------------------------------------------*/
+
+a {
+	color: #97df96;
+	text-decoration: none;
+	transition: all 0.5s;
+}
+
+a:hover {
+	color: #88ca87;
+}
+
+/* Buttons
+------------------------------------------------*/
+
+.button {
+	font-family: "brandon-grotesque", sans-serif;
+	font-size: 0.8125em;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+
+/* Main navigation 
+-------------------------------------------------*/
+
+.main-nav {
+	background-color: #fff;
+	bottom: 0;
+	height: 3.75em;
+	padding-top: 1.15em; 
+	position: fixed;
+	width: 100%;
+	z-index: 9999;
+}
+
+.main-nav__list {
+	margin: 0;
+	padding: 0;
+}
+
+.main-nav__item {
+	display: inline-block;
+	text-align: center;
+}
+
+.main-nav__item:first-child {
+	text-align: left;
+}
+
+.main-nav__item:last-child {
+	text-align: right;
+}
+
+/* Media Queries
+------------------------------------------------*/
+
+/* Medium and Large Screens (min-width: 48em / 768px) */
+
+@media screen and (min-width: 48em) {
+
+	body {
+		margin-top: 3.75em;
+		font-size: 16px;
+	}
+
+	.main-nav {
+		bottom: auto;
+		top: 0;
+	}
+
+}
