@@ -8,6 +8,7 @@
 - Links
 - Buttons
 - Main Navigation
+- Header
 - Media Queries
 	- Medium and Large Screens (min-width: 48em / 768px)
 
@@ -105,6 +106,45 @@ a:hover {
 	text-align: right;
 }
 
+/* Header 
+------------------------------------------------*/
+
+.masthead {
+	background: url("../images/masthead__bg.jpg") no-repeat center center fixed;
+	background-size: cover;
+	padding: 12.5em 0;
+	position: relative;
+	text-align: center;
+	width: 100%;
+}
+
+.masthead__title {
+	font-size: 2.7143em;
+}
+
+.masthead__subtitle {
+	color: #2a2c31;
+	font-family: "brandon-grotesque", sans-serif;
+	font-size: 1.2857em;
+	margin-top: -1.125em;
+}
+
+.profile {
+	border-radius: 3.125em;
+	height: 6.25em;
+	left: -3.125em;
+	margin-left: 50%;
+	overflow: hidden;
+	position: absolute;
+	bottom: -3.125em;
+	width: 6.25em;
+}
+
+.profile__img {
+	width: 6.25em;
+}
+
+
 /* Media Queries
 ------------------------------------------------*/
 
@@ -120,6 +160,27 @@ a:hover {
 	.main-nav {
 		bottom: auto;
 		top: 0;
+	}
+
+	.masthead__title {
+		font-size: 4.5em;
+	}
+
+	.masthead__subtitle {
+		font-size: 2.25em;
+		margin-top: -1.525em;
+	}
+
+	.profile {
+		border-radius: 4.6875em;
+		height: 9.375em;
+		left: -4.6875em;
+		bottom: -4.6875em;
+		width: 9.375em;
+	}
+
+	.profile__img {
+		width: 9.375em;
 	}
 
 }
