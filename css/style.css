@@ -9,6 +9,7 @@
 - Buttons
 - Main Navigation
 - Header
+- About Section
 - Media Queries
 	- Medium and Large Screens (min-width: 48em / 768px)
 
@@ -51,13 +52,20 @@ h1, h2, h3, h4, h5, h6 {
 	font-family: "brandon-grotesque", sans-serif;
 }
 
+h1 {
+	font-size: 2.25em;
+}
+
+h3 {
+	font-size: 1.28em;
+}
 /* Links
 ------------------------------------------------*/
 
 a {
 	color: #97df96;
 	text-decoration: none;
-	transition: all 0.5s;
+	transition: all 0.25s;
 }
 
 a:hover {
@@ -144,6 +152,35 @@ a:hover {
 	width: 6.25em;
 }
 
+/* About Section 
+------------------------------------------------*/
+
+.about {
+	margin: 3.125em 0;
+}
+
+.about__title {
+	border-bottom: 0.0625em solid #97df96;
+}
+
+.about .button {
+	display: block;
+	padding: 2.5em 0;
+	text-align: center;
+	width: 100%;
+}
+
+.more-about__title:before {
+	background-image: url(../images/icon.png);
+	background-size: cover;
+	content: "";
+	display: inline-block;
+	height: 1.25em;
+	margin-right: 0.625em;
+	vertical-align: text-top;
+	width: 1.25em;
+}
+
 
 /* Media Queries
 ------------------------------------------------*/
@@ -181,6 +218,18 @@ a:hover {
 
 	.profile__img {
 		width: 9.375em;
+	}
+
+	.about {
+		margin: 9.375em 0 12.5em;
+	}
+
+	.about .button {
+		text-align: left;
+	}
+
+	.more-about {
+		padding-left: 20%;
 	}
 
 }
