@@ -207,6 +207,39 @@ a:hover {
 	width: 100%;
 }
 
+/* Footer 
+------------------------------------------------*/
+
+.page-footer {
+	background-color: #2a2c31;
+	padding: 3.125em 0 18.75em;
+}
+
+.page-footer__title {
+	color: #fff;
+	text-align: center;
+}
+
+.social-links {
+	list-style-type: none;
+	margin: 1.5625em 0 3.75em;
+	padding: 0;
+	text-align: center;
+	width: 100%;
+}
+
+.social-links__item {
+	display: inline-block;
+	margin: 0 1.25em;
+}
+
+.credits {
+	color: #fff;
+	font-family: "brandon-grotesque", sans-serif;
+	font-weight: 100;
+	text-align: center;
+}
+
 
 /* Media Queries
 ------------------------------------------------*/
@@ -291,6 +324,5 @@ a:hover {
 		display: inline-block;
 		vertical-align: top;
 	}
-
 
 }
