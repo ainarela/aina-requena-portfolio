@@ -6,7 +6,7 @@
 - Layout
 - Typography
 - Links
-- Buttons
+- Buttons and icons
 - Main Navigation
 - Header
 - About Section
@@ -82,7 +82,6 @@ a:hover {
 	font-weight: 700;
 	text-transform: uppercase;
 }
-
 
 /* Main navigation 
 -------------------------------------------------*/
@@ -175,14 +174,29 @@ a:hover {
 }
 
 .more-about__title:before {
-	background-image: url(../images/icon.png);
-	background-size: cover;
-	content: "";
+	color: #97df96;
 	display: inline-block;
-	height: 1.25em;
-	margin-right: 0.625em;
-	vertical-align: text-top;
-	width: 1.25em;
+	font-family: "foundation-icons";
+  	font-style: normal;
+  	font-weight: normal;
+  	font-variant: normal;
+  	-webkit-font-smoothing: antialiased;
+  	line-height: 1;
+  	margin-right: 0.625em;
+  	text-transform: none;
+  	text-decoration: inherit;
+}
+
+.more-about__title.location:before {
+	content: "\f172";
+}
+
+.more-about__title.likes:before {
+	content: "\f159";
+}
+
+.more-about__title.listening:before {
+	content: "\f17b";
 }
 
 
@@ -230,7 +244,11 @@ a:hover {
 
 .social-links__item {
 	display: inline-block;
-	margin: 0 1.25em;
+	margin: 0 1.25em 1.25em;
+}
+
+.social-links__item .icon {
+	font-size: 1.825em;
 }
 
 .credits {
