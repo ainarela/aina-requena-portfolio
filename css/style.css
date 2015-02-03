@@ -208,9 +208,13 @@ a:hover {
 }
 
 .projects-masthead {
-	background: url("../images/masthead__bg.jpg") no-repeat center center fixed;
+	background: url("../images/projects__bg.jpg") no-repeat center center fixed;
 	background-size: cover;
 	margin-bottom: 3.125em;
+}
+
+.projects-masthead .masthead__title {
+	color: #fff;
 }
 
 .project {
