@@ -70,7 +70,7 @@ a {
 }
 
 a:hover {
-	color: #88ca87;
+	color: #79a978;
 }
 
 /* Buttons
@@ -168,9 +168,14 @@ a:hover {
 
 .about .button {
 	display: block;
-	padding: 2.5em 0;
+	padding: 2.5em 0 1em;
 	text-align: center;
 	width: 100%;
+}
+
+.about__social-links {
+	margin-bottom: 2.5em;
+	text-align: center;
 }
 
 .more-about__title:before {
@@ -307,6 +312,11 @@ a:hover {
 	}
 
 	.about .button {
+		text-align: left;
+		width: inherit;
+	}
+
+	.about__social-links {
 		text-align: left;
 	}
 
