@@ -212,6 +212,10 @@ a:hover {
 	margin-bottom: 3.125em;
 }
 
+.container.projects-container {
+	max-width: 62.5em;
+}
+
 .projects-masthead {
 	background: url("../images/projects__bg.jpg") no-repeat center center fixed;
 	background-size: cover;
@@ -333,28 +337,8 @@ a:hover {
 
 	}
 
-	.left-column .project:last-child .project__img {
-		float: right;
-	}
-
-	.left-column .project__img {
-		width: 50%;
-		display: inline-block;
-		vertical-align: top;
-	}
-
-	.project__caption {
-		padding: 0 0.625em;
-	}
-
-	.project__title {
-		margin: 0;
-	}
-
-	.left-column .project__caption {
-		width: 49%;
-		display: inline-block;
-		vertical-align: top;
+	.project {
+		margin: 0 0.625em;
 	}
 
 }
